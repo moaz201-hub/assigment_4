@@ -10,11 +10,6 @@ body {
 
 /* nav */
 nav {
-    position: relative;
-    left: 10vh;
-    top: 20px;
-    margin-top: 20px;
-    width: 90%;
     height: 10vh;
     border-radius: 20px;
     display: flex;
@@ -24,10 +19,23 @@ nav {
     border: 1px solid black;
     background: #ffffff;
     position: fixed;
-    top: 0;
     z-index: 100;
+    box-sizing: border-box; 
+    top: 20px;
+    width: 90%;
+    left: 5%;
 }
 
+@media (max-width: 768px) {
+    nav {
+        top: 10px;
+        width: 94%;       
+        left: 3%;         
+        padding: 12px 20px;
+        height: auto;     
+        min-height: 60px; 
+    }
+}
 .nav-logo {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
